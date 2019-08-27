@@ -48,6 +48,7 @@ namespace SimpleSafeBrowser
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            ///AmbLib.MakeTripleClickTextBox(cmbAddress.ComboBox);
             try
             {
                 string url = Clipboard.GetText();
