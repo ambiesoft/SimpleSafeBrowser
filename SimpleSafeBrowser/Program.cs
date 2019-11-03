@@ -14,6 +14,8 @@ namespace SimpleSafeBrowser
         [STAThread]
         static void Main()
         {
+            Ambiesoft.CppUtils.AmbSetProcessDPIAware();
+
             int val;
             string inipath = Application.ExecutablePath + ".ini";
             Ambiesoft.Profile.GetInt("Option", "emulation", -1, out val, inipath);

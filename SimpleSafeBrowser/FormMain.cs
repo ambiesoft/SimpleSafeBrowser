@@ -111,7 +111,8 @@ namespace SimpleSafeBrowser
             if (cmbAddress.Focused)
                 return;
 
-            cmbAddress.Text = mainWB.Url.ToString();
+            if(mainWB.Url != null)
+                cmbAddress.Text = mainWB.Url.ToString();
         }
 
         private void mainWB_FileDownload(object sender, EventArgs e)
